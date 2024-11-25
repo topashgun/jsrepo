@@ -1,7 +1,7 @@
 console.log("Page has successfully loaded!");
 
 
-function getRandomData() {
+function getRandomData(paramValue) {
     const randomNumber = Math.floor(Math.random() * 100); // Random number between 0-99
     const randomTexts = [
         "Hello, world!",
@@ -13,6 +13,7 @@ function getRandomData() {
     const randomText = randomTexts[Math.floor(Math.random() * randomTexts.length)]; // Random text
 
     return {
+        paramValue:paramValue,
         number: randomNumber,
         text: randomText
     };
